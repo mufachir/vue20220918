@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <CompHeader myName="Md. Mufachir Hossain" v-bind:tagline="msg"/>
     <p>
       I am a passionate software engineer, entreprenuer. <br/>
       I love to learn new things, read books, serve people. <br/>
@@ -30,15 +30,18 @@
 </template>
 
 <script>
+  import CompHeader from './CompHeader.vue';
   import CompFooter from './CompFooter';
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
   },
   components:{
-    CompFooter
-  }
+    CompFooter,
+    CompHeader
+}
 }
 </script>
 

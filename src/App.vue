@@ -1,6 +1,5 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/mufachir.jpg" style="width: 150px; height: 150px; border-radius: 50%">
+  <div id="app">    
     <HelloWorld msg="Welcome to my Personal Website"/>
   </div>
 </template>
@@ -17,6 +16,9 @@ export default {
 </script>
 
 <style>
+   body{
+        margin: 0;
+    }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

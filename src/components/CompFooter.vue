@@ -15,3 +15,12 @@
         </div>
     </section>
 </template>
+
+<style scoped>
+
+  .footer{
+    background-color: black;
+    padding: 20px 0;
+    font-size: 2em;
+  }
+</style>
