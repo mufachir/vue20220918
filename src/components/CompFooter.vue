@@ -3,24 +3,42 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    Find me on: <a href="https://www.facebook.com/mufachir.page">Facebook</a>
-                    &nbsp;
-                    <a href="https://twitter.com/cleancoder85">Twitter</a>
-                    &nbsp;
-                    <a href="https://www.linkedin.com/in/mufachir/">Linkedin</a>
-                    &nbsp;
-                    <a href="https://fiverr.com/cleancoder85/">Fiverr</a>
+                    Find me on: 
+                    <ul>
+                        <li v-for="socialLink in socialLinks" :key="socialLink">
+                            <a  :href="socialLink.link">
+                                {{socialLink.name}}
+                            </a> 
+                        </li>                        
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 </template>
 
-<style scoped>
+<script>
+export default({
+   props:{
+        socialLinks: {
+            type: Array
+        }
+   }
+})
+</script>
 
+
+<style scoped>
   .footer{
     background-color: black;
     padding: 20px 0;
     font-size: 2em;
+  }
+  ul {
+    list-style-type: none;
+  }
+  ul li{
+    display: inline;
+    margin: 5px;
   }
 </style>
